@@ -42,3 +42,5 @@ class Ambrosio(object):
 
 if __name__ == "__main__":
     print "Here be dragons!"
+    amb = Ambrosio()
+    amb.mainloop()
