@@ -34,6 +34,8 @@ class Ambrosio(object):
         #   update
         while True:
             command = self.next_command()
+            if command:
+                print command
             time.sleep(1)
             self.update_channels()
 
