@@ -5,7 +5,8 @@ class Channel(object):
     def __init__(self, name):
         super(Channel, self).__init__()
         self.name = name
-
+    def respond(self, response):
+        print "RESPONSE: ", response
 
 class TextChannel(Channel):
     """channel class read commands from file"""
@@ -34,7 +35,7 @@ class AmbrosioBot(telepot.Bot):
         self.clist = clist
 
     def on_chat_message(self, msg):
-        content_type, chat_type, chat_id, = telepot.glace(msg)
+        content_type, chat_type, chat_id, = telepot.glance(msg)
         if content_type == 'text':
             command =msg['text']
             if self.clist is not None:
