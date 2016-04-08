@@ -17,6 +17,8 @@ class MusicPlayer(Action):
 
     def do(self,command):
             print "Will play music", " ".join(command)
+            
+
 
     def is_for_you(self, word):
             if word in self.triggers:
