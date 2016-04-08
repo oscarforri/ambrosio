@@ -7,11 +7,10 @@ class Channel(object):
 
 class TextChannel(Channel):
     """channel class read commands from file"""
-    def __init__(self,name = "TextChannel"):
-        super(TextChannel, self).__init__()
-        self.name = name
+    def __init__(self, name="TextChannel"):
+        super(TextChannel, self).__init__(name)
         self.messages = []
-        with open("messages.txt","r") as f:
+        with open("messages.txt", "r") as f:
             for line in f:
                 self.messages.append(line)
 
