@@ -15,8 +15,8 @@ class MusicPlayer(Action):
         super(MusicPlayer, self).__init__()
         self.triggers = ["music","audio"] #Qualsevol paraula que comenci per aixo les executara el progama de audio
 
-    def do(self):
-            print "Will play music"
+    def do(self,command):
+            print "Will play music", " ".join(command)
 
     def is_for_you(self, word):
             if word in self.triggers:
