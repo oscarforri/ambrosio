@@ -1,0 +1,9 @@
+telegram:
+  token: LOTOKEN
+  usuaris:
+    - carlesm
+    - oscarforri
+  musicplayer:
+    directories:
+      -/home/carlesm/musicplayer
+      
